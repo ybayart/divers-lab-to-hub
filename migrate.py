@@ -3,7 +3,7 @@
 import json, gitlab, github, os
 from subprocess import call, check_call
 
-gl = gitlab.Gitlab('https://git.hexanyn.fr', private_token=os.environ.get('GITLAB_TOKEN'))
+gl = gitlab.Gitlab(os.environ.get('GITLAB_URL'), private_token=os.environ.get('GITLAB_TOKEN'))
 gh = github.Github(os.environ.get('GITHUB_TOKEN'))
 
 projects = gl.projects.list(all=True)
