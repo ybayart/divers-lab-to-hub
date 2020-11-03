@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-import json, gitlab, github, os
+import gitlab, github, os
 from subprocess import call, check_call
 
 gl = gitlab.Gitlab(os.environ.get('GITLAB_URL'), private_token=os.environ.get('GITLAB_TOKEN'))
