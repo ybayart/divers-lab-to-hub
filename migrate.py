@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/env python3
 
 import gitlab, github, os
 from subprocess import call, check_call
